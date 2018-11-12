@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+   <div class="box">
+        <h1 class="h11"></h1>
+        <h1 class="h12"></h1>
+   </div>
+   
+    <script>
+    //     let array =[
+    //         {
+    //             name:"sad",
+    //             age:7
+    //         },{
+    //             name:"sd",
+    //             age:1
+    //         },{
+    //             name:"sd",
+    //             age:25
+    //         }
+    //     ]
+    //   let arr =  array.sort((a,b)=>{
+    //        return b.age - a.age
+    //     })
+    //     console.log(arr)
+    // function fn (n) {
+    //     if(n === 1 || n===2){
+    //         return 1
+    //     }
+    //     return fn(n - 1) + fn(n-2)
+    // }
+    // console.log(fn(3))
+    // console.log(fn(4))
+    // console.log(fn(5))
+    // console.log(fn(6))
+    // console.log(fn(7))
+//    let arr= location.search.split('?')[1].split('&');
+//    function URL(arr){
+//        let obj = {};
+//       arr.map((v,i)=>{
+//           let key = v.split('=')[0];
+//           let val = v.split('=')[1];
+//           obj[key] = val
+//        })
+//        return obj
+//    }
+//   console.log(URL(arr)) 
+    var odiv = document.querySelector('.h11');
+    var oh1 = document.querySelector('.h12');
+    var client = document.documentElement.clientWidth;
+    var innerWidth = window.innerWidth;
+    odiv.innerHTML = `布局视口:${client}`
+    oh1.innerHTML = `视觉视口:${innerWidth}`
+
+    </script>
+</body>
+</html>
